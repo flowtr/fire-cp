@@ -1,5 +1,6 @@
 import sanic
 from datetime import datetime
+from os import environ
 
 now = datetime.now()
 app = sanic.app.Sanic(name='xDash')
@@ -32,4 +33,4 @@ def func(request):
     return response.file('auth.js')
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+    app.run(host="0.0.0.0", port=environ.get("PORT", 8000))
