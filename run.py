@@ -12,28 +12,28 @@ cur_time_short = now.strftime("[%Y-%m-%d %H:%M:%S]")
 
 @app.route('/')
 def func(request):
-    return response.file('/home/onx/github/xDash/index.html')
+    return response.file('index.html')
 
 @app.route('/login')
 def func(request):
-    return response.file('/home/onx/github/xDash/login.html')
+    return response.file('login.html')
 
 
 @app.route('css/skeleton.css')
 def func(request):
-    return response.file('/home/onx/github/xDash/skeleton.css')
+    return response.file('skeleton.css')
 
 @app.route('css/normalize.css')
 def func(request):
-    return response.file('/home/onx/github/xDash/normalize.css')
+    return response.file('normalize.css')
 
 @app.route('css/style.css')
 def func(request):
-    return response.file('/home/onx/github/xDash/style.css')
+    return response.file('style.css')
 
 @app.route('js/auth.js')
 def func(request):
-    return response.file('/home/onx/github/xDash/auth.js')
+    return response.file('auth.js')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000)
