@@ -1,9 +1,5 @@
 import sanic
-from sanic import Blueprint
-import pymongo
 from datetime import datetime
-import json
-import bcrypt
 
 now = datetime.now()
 app = sanic.app.Sanic(name='xDash')
