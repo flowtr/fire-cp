@@ -1,0 +1,41 @@
+{% extends "base.j2" %}
+{% block content %}
+<h1>Login</h1>
+<form class="login-form">
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+</form>
+{% endblock %}
+{% block scripts %}
+<script>
+    const chkURL = "{{api_url}}/check-creds";
+    const createURL = "{{api_url}}/create-user";
+    const updateURL = "{{api_url}}/update-password";
+
+    const loginParams = {
+        body: {
+            username: toString(
+                document.getElementById("username").text,
+            ),
+            password: toString(
+                document.getElementById("password").text,
+            ),
+        },
+        method: "POST",
+        content: "application/json",
+    };
+
+    function doLogin() {
+        fetch(chkURL, loginParams).then(function (response) {
+            console.log(response.status);
+        });
+    }
+
+    function doSignup() {
+        fetch(chkURL, loginParams).then(function (response) {
+            console.log(response.status);
+        });
+    }
+
+</script>
+{% endblock %}

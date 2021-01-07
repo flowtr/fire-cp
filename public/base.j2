@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <meta charset="UTF-8" />
+    <title>xDash \\ Login</title>
+    <meta name="description" content="The last dashboard you'll ever need." />
+    <meta name="author" content="xDash" />
+
+    <!-- Mobile Specific Metas
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <link href="//fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,300,600" rel="stylesheet" type="text/css" />
+
+    <!-- CSS
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    {% block head %}
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="one-half column" style="margin-top: 25%">
+                {% block content %}
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="animate__animated animate__backInDown">
+                    <button onclick="window.location.href='/'">Home</button>
+                </li>
+                <li class="animate__animated animate__backInDown">
+                    <button onclick="doLogin()">Login</button>
+                </li>
+                <li class="animate__animated animate__backInDown">
+                    <button onclick="window.location.href='#'">
+                        Sign Up
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        {% block scripts %}
+    </div>
+</body>
+
+</html>

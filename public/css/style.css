@@ -8,12 +8,12 @@ body {
 }
 
 h1 {
-    transition: 0.5s;
-	color: #A9DEF9;
+	transition: 0.5s;
+	color: #a9def9;
 }
 
 p {
-	color: #A9DEF9;
+	color: #a9def9;
 }
 
 img {
@@ -27,39 +27,39 @@ li {
 }
 
 li > a {
-	color: #A9DEF9;
+	color: #a9def9;
 }
 
 li > a:hover {
 	transition: 0.3s;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 button {
-	color: #A9DEF9;
+	color: #a9def9;
 	padding: 0 20px;
 }
 
 button:hover {
 	transition: 0.3s;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
-nav  {
+nav {
 	width: 100%;
 }
 
 .login-form > input {
-    border: 2px solid #D0F4DE;
-    opacity: 50%;
-    transition: opacity 0.25s;
-    border: 2px solid #D0F4DE;
-    background-color: black;
-    color: white;
+	border: 2px solid #d0f4de;
+	opacity: 50%;
+	transition: opacity 0.25s;
+	border: 2px solid #d0f4de;
+	background-color: black;
+	color: white;
 }
 
 .login-form > input:focus {
-    opacity: 100%;
-    transition: opacity 0.25s;
-    border: 2px solid #D0F4DE;
+	opacity: 100%;
+	transition: opacity 0.25s;
+	border: 2px solid #d0f4de;
 }
