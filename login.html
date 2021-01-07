@@ -1,80 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Basic Page Needs
+	<head>
+		<!-- Basic Page Needs
     ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-    <meta charset="UTF-8">
-    <title>xDash \\ Login</title>
-    <meta name="description" content="The last dashboard you'll ever need.">
-    <meta name="author" content="xDash">
-    
-    <!-- Mobile Specific Metas
+		<meta charset="UTF-8" />
+		<title>xDash \\ Login</title>
+		<meta
+			name="description"
+			content="The last dashboard you'll ever need."
+		/>
+		<meta name="author" content="xDash" />
+
+		<!-- Mobile Specific Metas
     ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- FONT
+		<!-- FONT
     ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-    <link href="//fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,300,600" rel="stylesheet" type="text/css">
+		<link
+			href="//fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="//fonts.googleapis.com/css?family=Montserrat:400,300,600"
+			rel="stylesheet"
+			type="text/css"
+		/>
 
-    <!-- CSS
+		<!-- CSS
     ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/style.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/skeleton.css" />
+		<link rel="stylesheet" href="css/style.css" />
 
-    <!-- Favicon
+		<!-- Favicon
     ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-   
-   
-</head>
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+	</head>
 
-<body>
-    <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-          <h1>Login</h1>
-          <form class="login-form">
-              <input type="text" id="username" placeholder="Username">
-              <input type="password" id="password" placeholder="Password">
-          </form>
-      </div>
-    </div>
-<nav>
-<ul>
-    <li class="animate__animated animate__backInDown"><button onclick="doLogin()">Login</button></li>
-    <li class="animate__animated animate__backInDown"><button onclick="window.location.href='#'">Sign Up</button></li>
-</ul>
-</nav>
-       <script>
-const chkURL="http://localhost:6969/v1/check-creds"
-const createURL="http://localhost:6969/v1/create-user"
-const updateURL="http://localhost:6969/v1/update-password"
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="one-half column" style="margin-top: 25%">
+					<h1>Login</h1>
+					<form class="login-form">
+						<input
+							type="text"
+							id="username"
+							placeholder="Username"
+						/>
+						<input
+							type="password"
+							id="password"
+							placeholder="Password"
+						/>
+					</form>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li class="animate__animated animate__backInDown">
+						<button onclick="doLogin()">Login</button>
+					</li>
+					<li class="animate__animated animate__backInDown">
+						<button onclick="window.location.href='#'">
+							Sign Up
+						</button>
+					</li>
+				</ul>
+			</nav>
+			<script>
+				const chkURL = "http://localhost:6969/v1/check-creds";
+				const createURL = "http://localhost:6969/v1/create-user";
+				const updateURL = "http://localhost:6969/v1/update-password";
 
-var loginParams = {
-    body: {
-        "username": toString(document.getElementById("username").text),
-        "password": toString(document.getElementById("password").text)
-    },
-    method:"POST",
-    content: "application/json"
-}
+				var loginParams = {
+					body: {
+						username: toString(
+							document.getElementById("username").text,
+						),
+						password: toString(
+							document.getElementById("password").text,
+						),
+					},
+					method: "POST",
+					content: "application/json",
+				};
 
+				function doLogin() {
+					fetch(chkURL, loginParams).then(function (response) {
+						console.log(response.status);
+					});
+				}
 
-function doLogin() {
-    fetch(chkURL, loginParams).then(function(response){
-    console.log(response.status)
-});
-}
-
-function doSignup() {
-    fetch(chkURL, loginParams).then(function(response){
-    console.log(response.status)
-});
-}
-       </script>
-</div>
-</body>
+				function doSignup() {
+					fetch(chkURL, loginParams).then(function (response) {
+						console.log(response.status);
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>
