@@ -6,7 +6,7 @@ import json
 import bcrypt
 
 now = datetime.now()
-app = sanic.app.Sanic(name='AIO-API')
+app = sanic.app.Sanic(name='xDash')
 response = sanic.response
 cur_time_short = now.strftime("[%Y-%m-%d %H:%M:%S]")
 
