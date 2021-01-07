@@ -1,0 +1,65 @@
+* {
+	text-decoration: none;
+}
+
+body {
+	background-color: #000000;
+	font-family: "JetBrains Mono", sans-serif;
+}
+
+h1 {
+    transition: 0.5s;
+	color: #A9DEF9;
+}
+
+p {
+	color: #A9DEF9;
+}
+
+img {
+	transition: 0.3s;
+}
+
+li {
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+}
+
+li > a {
+	color: #A9DEF9;
+}
+
+li > a:hover {
+	transition: 0.3s;
+	color: #FFFFFF;
+}
+
+button {
+	color: #A9DEF9;
+	padding: 0 20px;
+}
+
+button:hover {
+	transition: 0.3s;
+	color: #FFFFFF;
+}
+
+nav  {
+	width: 100%;
+}
+
+.login-form > input {
+    border: 2px solid #D0F4DE;
+    opacity: 50%;
+    transition: opacity 0.25s;
+    border: 2px solid #D0F4DE;
+    background-color: black;
+    color: white;
+}
+
+.login-form > input:focus {
+    opacity: 100%;
+    transition: opacity 0.25s;
+    border: 2px solid #D0F4DE;
+}
