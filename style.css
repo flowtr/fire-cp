@@ -63,3 +63,9 @@ nav {
 	transition: opacity 0.25s;
 	border: 2px solid #d0f4de;
 }
+
+footer {
+	background-color: #262626;
+	width: 100%;
+	position: relative;
+}

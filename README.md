@@ -1,6 +1,8 @@
-# xDash
+# Fire Control Panel
 
-Open-source, reusable dashboard template.
+Fire-CP is an open-source server management panel made with Python3 and MongoDB.
+
+##
 
 ## Usage
 

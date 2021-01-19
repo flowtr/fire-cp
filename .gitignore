@@ -8,3 +8,4 @@ templates/
 .vscode
 .idea
 .env
+data/
