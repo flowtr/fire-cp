@@ -4,9 +4,20 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider, ColorModeProvider } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
+
+const theme = extendTheme({
+	colors: {
+		brand: {
+			900: "#1a365d",
+			800: "#153e75",
+			700: "#2a69ac",
+		},
+	},
+});
 
 ReactDOM.render(
-	<ThemeProvider>
+	<ThemeProvider theme={theme}>
 		<ColorModeProvider options={{ useSystemColorMode: true }}>
 			<App />
 		</ColorModeProvider>
