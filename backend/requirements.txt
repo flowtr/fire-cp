@@ -1,8 +1,0 @@
-bcrypt
-sanic
-pymongo
-pympg
-sanic-restplus
-firstclass-dotenv
-sanic-session
-coloredlogs

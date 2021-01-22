@@ -1,17 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider, ColorModeProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
+import "./index.css";
 
 const theme = extendTheme({
 	colors: {
-		brand: {
-			900: "#1a365d",
-			800: "#153e75",
-			700: "#2a69ac",
+		bg: {
+			100: "#121212",
+			200: "#222222",
+			300: "#232323",
+			400: "#323232",
+		},
+		blue: {
+			100: "#10add1",
+		},
+		white: {
+			800: "#ffffff",
 		},
 	},
 });

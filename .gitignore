@@ -1,13 +1,18 @@
 api_auth.py
 auth.js
 config.json
-__pycache__/
+__pycache__
 test.py
 web.log
-templates/
+templates
 .vscode
 .idea
+
+# Environment
 .env
+config.y*ml
+config.json
+
 data/
 build
 dist

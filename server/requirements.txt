@@ -1,0 +1,12 @@
+pympg
+firstclass-dotenv
+coloredlogs
+Django
+django-cors-headers
+drf-yasg
+typed-models
+dj-database-url
+django-typed-models
+/home/theoparis/flowtr-config
+psycopg2-binary
+dict2dot
